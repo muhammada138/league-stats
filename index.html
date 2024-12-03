@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Stats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>League of Legends Stats</h1>
+    </header>
+    <main>
+        <div id="menu">
+            <button onclick="fetchScoreboard()">Scoreboard</button>
+            <button onclick="fetchRoleLeaderboard()">Role Leaderboard</button>
+            <button onclick="fetchPlayerStats()">Player Stats</button>
+            <button onclick="fetchComparePlayers()">Compare Players</button>
+        </div>
+        <div id="content">
+            <p>Select an option to display data.</p>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
