@@ -1,4 +1,4 @@
-const apiBaseUrl = 'http://127.0.0.1:5000';
+const apiBaseUrl = 'https://league-stats-6ms1.onrender.com';
 
 async function fetchScoreboard() {
     console.log("Fetching scoreboard...");
