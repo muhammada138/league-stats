@@ -1,18 +1,18 @@
 const apiBaseUrl = 'https://league-stats-6ms1.onrender.com';
 
 async function fetchScoreboard() {
-    console.log("Fetching scoreboard...");
     try {
-        const response = await fetch(`${apiBaseUrl}/scoreboard`);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const response = await fetch(`${backendUrl}/scoreboard`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
         const data = await response.json();
-        console.log("Scoreboard data received:", data);
         displayScoreboard(data);
     } catch (error) {
         console.error("Error fetching scoreboard:", error);
-        displayError("Failed to fetch scoreboard.");
     }
 }
+
 
 async function fetchRoleLeaderboard() {
     const role = prompt("Enter role (e.g., TOP, JUNGLE):").trim().toUpperCase();
