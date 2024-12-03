@@ -8,7 +8,7 @@ import base64
 
 app = Flask(__name__)
 CORS(app)
-FOLDER_PATH = r"C:\Users\muham\OneDrive\Desktop\Replay Files"
+FOLDER_PATH = r"Replay Files"
 NAME_SUBSTITUTIONS = {
     "斯基比迪厕所": "Aiden",
     "æ–¯åŸºæ¯”è¿ªåŽ•æ‰€": "Aiden"
