@@ -390,4 +390,4 @@ def player_progress():
 
 if __name__ == "__main__":
     process_json_files(FOLDER_PATH)
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
